@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>E-Voting</title>
+
+</head>
+<style>
+    .verifyButton{
+        position: relative;
+    }
+    .verifyButton > button{
+        position: absolute;
+        border-radius: 5px;
+        right: 5px;
+        top: 4px;
+        z-index: 2;
+        border: 0.2px solid grey;
+        width: 25%;
+        height: 30px;
+        cursor: pointer;
+        color: black;
+        background-color: #fff;
+        font-weight: 600;
+    }
+</style>
+<body>
+    
+    <div class="container register">
+        <div class="row">
+            
+
+            <div class="col-md-9 register-right">
+
+                <!-- <div class="tab-content" id="myTabContent"> -->
+                    <!-- <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> -->
+                        <h3 class="register-heading">Reset your password</h3>
+                        <!-- <h6 class="register-note">(Note: Only CR's are allowed to cast Vote) </h6> -->
+                        
+                        <div class="row register-form justify-content-center">
+                            <div class="col-md-6">
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Registered Phone no. *" value="">
+                                </div>
+
+                                <div class="form-group verifyButton">
+                                   <input type="password" class="form-control verifyButtonInput " placeholder="Enter OTP *" value=""> 
+                                   <button>Verify</button>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Enter New Password *" value="">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm New Password *" value="">
+                                </div>
+
+                                <div class="form-group float-right">
+                                    <span style="display: none;">*Password doesn't match/*Incorrect OTP/*Phone number not registered</span>
+                                    <br>
+                                    <input type="submit" class="btnChangePass" value="Change Password">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    <!-- </div> -->
+                <!-- </div> -->
+
+            </div>
+
+            <div class="col-md-3 register-left">
+                <a href="/login.html">
+                    <img src="https://media.giphy.com/media/QZUpiZf9AOv7V0hR5B/giphy.gif" style="width: 50%;" alt="">
+                </a>
+                <h3>Welcome</h3>
+                <p><q> Not voting is not a protest. It is a surrender. </q>
+                <br><br>
+                So choose wisely and live well.
+                </p>
+                <label>Not yet registered?</label>
+                <input onclick="window.location.href='/register.html'" type="submit" name="" value="Register Now"><br>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
